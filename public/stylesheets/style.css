@@ -1,6 +1,15 @@
+html {
+    min-height: 100%;
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #69add4 8%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#69add4 8%), to(#175291 84%));
+  background: -webkit-linear-gradient(top, #69add4 8%, #175291 84%);
+  background: -moz-linear-gradient(top, #69add4 8%, #175291 84%);
+  background: -ms-linear-gradient(top, #69add4 8%, #175291 84%);
+  background: -o-linear-gradient(top, #69add4 8%, #175291 84%);
 }
 
 a {
