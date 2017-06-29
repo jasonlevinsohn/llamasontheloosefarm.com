@@ -7,6 +7,24 @@ html
     link(rel='stylesheet', href='/bootstrap/css/readable-theme.bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') Llamas on The Loose
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/about/') About
+    .container
+      block content
+
+      footer
+        .row
+          .col-xs-12
+            small &copy; L3 2017
     script(src='/javascripts/jquery-3.2.1.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
