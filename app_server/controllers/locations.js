@@ -4,7 +4,7 @@ module.exports.homelist = (req, res, next) => {
 }
 
 module.exports.locationInfo = (req, res, next) => {
-    res.render('index', { title: 'Location info'});
+    res.render('location-info', { title: 'Location info'});
 }
 
 module.exports.addReview = (req, res, next) => {
