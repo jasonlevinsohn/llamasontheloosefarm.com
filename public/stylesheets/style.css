@@ -35,3 +35,11 @@ a {
 .review-timestamp {
   color: #888;
 }
+
+.locations {
+  margin-bottom: 20px;
+}
+
+.facility {
+  margin-right: 5px;
+}
