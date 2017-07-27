@@ -77,6 +77,6 @@ module.exports.locationInfo = (req, res, next) => {
 module.exports.addReview = (req, res, next) => {
     res.render('location-review-form', {
         title: 'Add Review',
-        location: 'Starstups'
+        location: 'Starcups'
     });
 }
