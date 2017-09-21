@@ -8,22 +8,28 @@ block content
       .col-lg-6
         h1= pageHeader.title 
           small &nbsp; #{pageHeader.strapline} 
-  .row
-    .col-xs-12.col-sm-8
-      .row.list-group
-        each location in locations
-          .col-xs-12.list-group-item.locations
-            h4
-              a(href="/location")= location.name 
-              small &nbsp;
-                +outputRating(location.rating)
-              span.badge.pull-right.badge-default= location.distance
-            p.address #{location.address}
-            p
-              each facility in location.facilities
-                span.label.label-warning.facility= facility
-                  &nbsp;
-    .col-xs-12.col-sm-4
-      p.lead Looking for great Llamas. We can help you find the one that is right for you. It's all right here.
+    .row
+      .col-xs-12.col-sm-8
+        .row.main-description.text-block
+            p Welcome to Llamas on the Loose Farm.  We raise a variety of animals on our farm. We raise Llamas of course, but also chickens and goats. The Fainting Goat is the primary animal we breed.  Fainting Goats have a condition called Myotonia Congenita.  Their muscles experience a contraction when the goat is startled or surprised which in turn makes the goat fall over, lasting between 10-15 seconds.  They do not actually pass out, it's just an appearance of such which gave these goats their name.  They are also known as Myotonic Goats,Tennessee Fainting Goats, Nervous Goats and Scare Goats.   I've seen the younger goats faint from excitement as they come running at feeding time.  The older adults, especially does, seem to learn to "balance" themselves , still creating a stiff appearance without falling over.  They stiffen and drag their back legs along for a brief period of time, then go on about their way like nothing happened.    
+
+            p As the story goes, in the early 1800's, a man named John Tinsley came to Marshall County Tennessee from Nova Scotia.  With him he brought 4 Fainting Goats and one small cow (some have said it was a Zebu).  From there, the breed was started in the United States.   Fainters have become popular over the years for several reasons.  They do not possess the ability to climb or jump like other breeds of goats due to their myotonia, they make excellent  mothers and their muscular build is valuable for meat production.  The original color is said to be black and white, my personal favorite.  We also have some red and whites who are beautiful as well.
+
+            p Most of our goats originate from the long breeding lines of the Tennessee Fainters.  We started out with one buck and one doe, we are now at 70 plus Fainters.  I am gearing my breeding program towards Show Quality Myotonic Goats. I'm looking for muscle,conformation and correctness in my herd. 
+        .row.list-group
+          each location in locations
+            .col-xs-12.list-group-item.locations
+              h4
+                a(href="/location")= location.name 
+                small &nbsp;
+                  +outputRating(location.rating)
+                span.badge.pull-right.badge-default= location.distance
+              p.address #{location.address}
+              p
+                each facility in location.facilities
+                  span.label.label-warning.facility= facility
+                    &nbsp;
+      .col-xs-12.col-sm-4
+        p.lead.text-block Looking for great Llamas. We can help you find the one that is right for you. It's all right here.
 
             

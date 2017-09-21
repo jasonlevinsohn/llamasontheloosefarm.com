@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 
 // In a relational database we would put this in a separate table and
 // locationSchema would link to it using a foreign key.  That is not how
-// Document databases work.  the Opening Times will be a subdocument of
+// Document databases work.  the Opening Times will be a sub-document of
 // locationsSchema.
 
 var openingTimeSchema = new mongoose.Schema({
@@ -59,4 +59,7 @@ var locationSchema = new mongoose.Schema({
     openingTimes: [openingTimeSchema],
     reviews: [reviewSchema]
 });
+
+// This creates a model in the actual MongoDB database
+mongoose.model('Location', locationSchema);
 
